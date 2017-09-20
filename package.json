@@ -2,7 +2,8 @@
 	"scripts": {
 		"i": "npm install && npm run clean && tsc",
 		"src": "tsc --watch",
-		"r": "nodemon dist/index.js",
+		"start": "sleep 1 && nodemon dist/index.js --watch dist",
+		"r": "npm run clean && npm-run-all --parallel src start",
 		"clean": "rm -rf dist",
 		"rm": "sudo rm -rf node_modules && npm run clean"
 	},
