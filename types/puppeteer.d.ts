@@ -4,7 +4,7 @@ declare module 'puppeteer' {
 	
 	import * as events from 'events'
 	
-	function launch(options?: LaunchOptions): Promise<Browser>
+	export function launch(options?: LaunchOptions): Promise<Browser>
 
 	export interface LaunchOptions {
 		ignoreHTTPSErrors?: boolean

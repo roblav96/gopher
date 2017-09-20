@@ -29,6 +29,8 @@
 		"@types/node": "latest",
 		"@types/redis": "latest",
 		"npm-run-all": "latest",
+		"dts-gen": "latest",
+		"clipboardy": "latest",
 		"nodemon": "latest",
 		"typescript": "latest"
 	}

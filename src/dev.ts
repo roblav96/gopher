@@ -42,6 +42,17 @@ process.on('unhandledRejection', function(error) {
 	console.error('unhandledRejection > error', error)
 })
 
+const dtsgen = require('dts-gen')
+const clipboardy = require('clipboardy')
+process.dtsgen = function(name, value) {
+	let results = dtsgen.generateIdentifierDeclarationFile(name, value)
+	clipboardy.write(results).then(function() {
+		console.info('coppied >', name)
+	}).catch(function(error) {
+		console.error('clipboardy.write > error', error)
+	})
+}
+
 
 
 
