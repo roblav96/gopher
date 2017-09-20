@@ -1,3 +1,10 @@
+# gopher
+dist/
+
+*.DS_STORE
+*.log
+*.rdb
+
 # Logs
 logs
 *.log

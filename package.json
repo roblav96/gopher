@@ -1,0 +1,34 @@
+{
+	"scripts": {
+		"i": "npm install && npm run clean && tsc",
+		"src": "tsc --watch",
+		"r": "nodemon dist/index.js",
+		"clean": "rm -rf dist",
+		"rm": "sudo rm -rf node_modules && npm run clean"
+	},
+	"dependencies": {
+		"axios": "latest",
+		"cli-color": "latest",
+		"debug-trace": "latest",
+		"eventemitter3": "latest",
+		"eyes": "latest",
+		"puppeteer": "latest",
+		"ioredis": "latest",
+		"lodash": "latest",
+		"moment": "latest",
+		"rethinkdbdash": "latest"
+	},
+	"devDependencies": {
+		"@types/cli-color": "latest",
+		"@types/core-js": "latest",
+		"@types/eyes": "latest",
+		"@types/ioredis": "latest",
+		"@types/lodash": "latest",
+		"@types/rethinkdb": "latest",
+		"@types/node": "latest",
+		"@types/redis": "latest",
+		"npm-run-all": "latest",
+		"nodemon": "latest",
+		"typescript": "latest"
+	}
+}
